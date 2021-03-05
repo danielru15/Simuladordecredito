@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'roboto' ,sans-serif !important;
+    list-style:  none;
+    text-decoration: none;
+}
+
+:root {
+    --Color-fondo:#e4e4e4;
+    --Color-header: #0076a9;
+    --Color-cuota-fija: #3248b8 ;
+    --Color-cuota-variable:rgb(135, 55, 157);
+   }
+body{
+    background-color: var(--Color-fondo) ;
+}
+header {
+    padding:3rem !important;
+    background-color: var(--Color-header);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+}
+header h1 {
+    color: white;
+    font-size: 3rem !important;
+    text-align: center;
+    text-shadow: -4px 3px 0 #131313, -14px 7px 0 #0a0e27;
+}
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 25vh auto;
+}
+.cuota-fija,.cuota-variable {
+    width: 30vw;
+    height: 30vh;
+    margin: 2em;
+    border-radius: .70em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    padding: 2em;
+}
+.cuota-fija {
+    background-color:var(--Color-cuota-fija);
+}
+.cuota-variable{
+    background-color: var(--Color-cuota-variable);
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor img {
+    width: 20vw;
+    height: 20vw;
+}

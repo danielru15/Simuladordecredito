@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Sistema amortización cuota fija</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema amortización cuota fija</h1>
+        <a role="button" href="/cuota-variable/index.html"  id="btn1" class="btn btn-primary">Cambiar a cuota variable</a>
+    </header>
+   <main> 
+    <section class="botones-crear">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id="Simular-credito">
+            Simular credito
+        </button>
+        <button id="excel" class="btn btn-info"  title="Excel">Exportar a Excel</button>  
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Simula tu credito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body">
+                                <div class="form-group">                                    
+                                <label>Monto</label>
+                                <input id="Monto" type="number" class="form-control" required>
+                                </div>    
+                                <div class="form-group">
+                                <label>Interes</label>
+                                <input id="Interes" type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                <label>Cantidad de cuotas</label>
+                                <input id="Tiempo" type="text" class="form-control" required>
+                                </div>                                    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" tabindex="2">Cancelar</button>
+                                <button type="submit"  value="calcular" class="btn btn-primary" translate="1">calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </section>
+    <section class="tabla-amortizacion">
+        <table id="tabla-amortizacion" class="table table-striped table-bordered" style="width:100%">
+            <thead class="text-center">
+                    <tr>                      
+                        <th>Fecha</th>
+                        <th>Saldo inicial</th>
+                        <th>Interes</th>
+                        <th>Cuota</th>   
+                        <th>amortización</th>                                                         
+                        <th>saldo final</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-de-amortizacion"> 
+         
+                </tbody>  
+            </table>
+
+    </section>
+   </main>
+   <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'roboto' ,sans-serif !important;
+    list-style:  none;
+    text-decoration: none;
+}
+:root {
+    --Color-primario: #3248b8;
+    --Color-secundario: rgb(55, 58, 157);
+   }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 2rem !important;
+    background-color: var(--Color-primario);
+    height: 5rem;
+}
+header h1 {
+    color: white;
+    font-size: 2.5rem !important;
+}
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+#Simular-credito {
+    margin: 2rem;
+}
+#tabla-amortizacion{
+    background-color: var(--Color-secundario);
+    color: white;
+}
+#excel {
+    background-color: yellowgreen !important;
+    border: 0 !important;
+    margin: 0 -1.8rem;
+}
+#btn1{
+    background-color: var(--Color-secundario) !important;
+    border: solid 2px var(--Color-primario);
+}
