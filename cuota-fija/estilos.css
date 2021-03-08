@@ -27,18 +27,26 @@ main {
     margin: 0 auto;
 }
 #Simular-credito {
-    margin: 2rem;
-}
-#tabla-amortizacion{
-    background-color: var(--Color-secundario);
-    color: white;
+    margin:2rem 0;
 }
 #excel {
     background-color: yellowgreen !important;
     border: 0 !important;
-    margin: 0 -1.8rem;
+    color: white !important;
 }
 #btn1{
     background-color: var(--Color-secundario) !important;
     border: solid 2px var(--Color-primario);
+}
+table thead {
+    background:var(--Color-secundario);
+    color: white;
+}
+#tabla-amortizacion_previous,#tabla-amortizacion_next {
+    background-color: var(--Color-secundario) !important;
+    color: white !important;
+    border: 0;
+}
+td {
+    text-align: center;
 }
