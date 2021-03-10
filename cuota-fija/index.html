@@ -32,19 +32,19 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="enviar">
                             <div class="modal-body">
                                 <div class="form-group">                                    
                                 <label>Monto</label>
-                                <input id="Monto" type="number" class="form-control" required>
+                                <input id="Monto" type="text" class="form-control" >
                                 </div>    
                                 <div class="form-group">
                                 <label>Interes</label>
-                                <input id="Interes" type="number" class="form-control" required>
+                                <input id="Interes" type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
                                 <label>Cantidad de cuotas</label>
-                                <input id="Tiempo" type="number" class="form-control" required>
+                                <input id="Tiempo" type="text" class="form-control" >
                                 </div>                                    
                             </div>
                             <div class="modal-footer">
@@ -63,11 +63,10 @@
             <thead class="text-center">
                     <tr>                      
                         <th>Fecha</th>
-                        <th>Saldo inicial</th>
-                        <th>Interes</th>
-                        <th>Cuota</th>   
-                        <th>amortización</th>                                                         
-                        <th>saldo final</th>
+                        <th>Cuota</th>
+                        <th>Capital</th>
+                        <th>Interes</th>   
+                        <th>Saldo</th>                                                         
                     </tr>
                 </thead>
                 <tbody id="tabla-de-amortizacion"> 
@@ -88,6 +87,8 @@
     <script src="/js/FileSaver.min.js"></script>
     <script src="/js/tableexport.min.js"></script>
     <script src="/js/excel.js"></script>
+    <!-- Moment js -->
+    <script src="/js/moment.js"></script>
     <!-- Codigo propio  -->
     <script src="index.js"></script>
 </body>
